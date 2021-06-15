@@ -12,7 +12,7 @@ const App = () => {
       .get(
         "https://www.googleapis.com/books/v1/volumes?q=" +
           getBookName +
-          "&key=AIzaSyAuT2iwo4Ynoe-ZYos5Bd7n7KEC3dIWBU8 &maxResults=40"
+          "&key=YOURAPIKEY &maxResults=40"
       )
       .then((data) => {
         setBooks(data.data.items);
